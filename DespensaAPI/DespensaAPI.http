@@ -1,0 +1,6 @@
+@DespensaAPI_HostAddress = http://localhost:5096
+
+GET {{DespensaAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
