@@ -22,14 +22,20 @@ namespace DespensaAPI.Services
 
         public async Task<UserModel> AuthenticateAsync(string username, string password)
         {
-            var user = await _dbContext.Users.SingleOrDefaultAsync(u => u.Username == username && u.Password == password);
+            var user = await _dbContext.Users.FirstOrDefaultAsync(u => u.Username == username && u.Password == password);
 
-            // Return null if user not found
             if (user == null)
                 return null;
 
-            // Authentication successful
-            return user;
+            // Convertir User a UserModel (si UserModel es una clase diferente)
+            var userModel = new UserModel
+            {
+                Username = user.Username,
+                Password = user.Password
+                // Copiar otras propiedades según sea necesario
+            };
+
+            return userModel;
         }
 
         //public async Task<UserModel> AuthenticateAsync(string username, string password)

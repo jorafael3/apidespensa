@@ -57,5 +57,8 @@ namespace DespensaAPI.Context
             var idParam = new SqlParameter("@Id", id);
             return await Database.ExecuteSqlRawAsync("EXEC DeleteProducto @Id", idParam);
         }
+
+        public DbSet<User> Users { get; set; }
+
     }
 }

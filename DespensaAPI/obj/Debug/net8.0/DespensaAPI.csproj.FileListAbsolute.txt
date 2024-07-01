@@ -251,3 +251,4 @@ C:\Users\jalva\source\repos\DespensaAPI\DespensaAPI\bin\Debug\net8.0\runtimes\wi
 C:\Users\jalva\source\repos\DespensaAPI\DespensaAPI\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\jalva\source\repos\DespensaAPI\DespensaAPI\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Windows.Extensions.dll
 C:\Users\jalva\source\repos\DespensaAPI\DespensaAPI\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\jalva\source\repos\DespensaAPI\DespensaAPI\obj\Debug\net8.0\DespensaAPI.sourcelink.json
